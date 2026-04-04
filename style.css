@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg_1: #A0F1BD;
+    --bg_2: #F9F9F9;
+    --bg_3: #2E4F21;
+    --bg_4: #ffffff;
+    --bg_5: #F4F7F5;
+    --bg_6: #D2F8DC;
+
+    --accent-1: #D2F8DC;
+    --accent-2: #D7D7D7;
+
+    --paragraph: #2E4F21;
+
+    --on-accent-1: #ffffff;
+    --on-accent-2: #506349;
+    --on-accent-3: #7D9276;
+    --on-accent-4: #D5E4D0;
+
+    --divider-1: #2E4F21;
+    --divider-2: #C7C7C7;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    width: 100%;
+    max-width: 1280px;
+}
+
+
+/* ===============================HEADER============================================== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    font-family: "Work Sans", sans-serif;
+    padding: 32px 40px;
+
+    background-color: var(--bg_1);
+    color: var(--paragraph);
+}
+
+nav .left img {
+    width: 100%;
+}
+
+nav .right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+nav .right .one {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -4.5%;
+
+    color: var(--paragraph);
+}
+
+nav .right .two {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -4.5%;
+
+    padding: 12px;
+    border-radius: 51.57px;
+
+    background-color: var(--paragraph);
+    color: var(--on-accent-1);
+
+    transition: 0.4s;
+}
+
+nav .right .two:hover {
+    background-color: var(--bg_2);
+    color: var(--bg_3);
+}
+
+nav .right .two::after {
+    content: "Book an appointment";
+}
+
+
+@media (max-width: 1279px) and (min-width: 800px) {
+    nav {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 799px) {
+    nav {
+        padding: 16px;
+    }
+
+    nav .right{
+        gap: 16px;
+    }
+
+    nav .right .two::after {
+        content: "Book";
+    }
+}
+/* ===============================HERO============================================== */
+
+.hero {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    font-family: "Work Sans", sans-serif;
+    padding: 100px 40px;
+
+    background-color: var(--bg_1);
+    color: var(--paragraph);
+}
+
+.hero-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    width: 100%;
+}
+
+.hero .block {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 50px;
+}
+
+.hero .block-top {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.hero h1 {
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -8%;
+
+    color: var(--paragraph);
+}
+
+.hero p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -4.5%;
+
+    color: var(--paragraph);
+}
+
+.hero .block a {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -4.5%;
+
+    padding: 12px;
+    border-radius: 51.57px;
+
+    background-color: var(--paragraph);
+    color: var(--on-accent-1);
+
+    transition: 0.4s;
+}
+
+.hero .block a:hover {
+    background-color: var(--bg_2);
+    color: var(--bg_3);
+}
+
+.hero .img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero .img img{
+    width: 429px;
+    height: 411.49px;
+}
+
+@media (max-width: 1279px) and (min-width: 800px) {
+    .hero {
+        padding: 100px 24px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+    }
+
+    .hero-div {
+        gap: 32px;
+    }
+
+    .hero .img img{
+        width: 273px;
+        height: 262px;
+    }
+}
+
+@media (max-width: 799px) {
+   .hero {
+        padding: 40px 16px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero .block-top {
+        gap: 16px;
+    }
+
+    .hero-div {
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .hero .block {
+        gap: 40px;
+    }
+
+    .hero .img {
+        justify-content: center;
+        order: -1;
+    }
+
+    .hero .img img{
+        width: 343px;
+        height: 329px;
+    }
+}
+/* ================================================================================= */
+
+.intro {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    font-family: "Work Sans", sans-serif;
+    padding: 120px 40px 100px 40px;
+
+    background-color: var(--bg_4);
+    color: var(--paragraph);
+}
+
+.intro div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 28.04px;
+    width: 100%;
+}
+
+.intro div h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -2%;
+}
+
+.intro div .one {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 105%;
+    letter-spacing: -7%;
+}
+
+.intro div .two {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -4.5%;
+}
+
+.intro div a {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -4.5%;
+
+    padding: 12px;
+    border-radius: 51.57px;
+    background-color: var(--paragraph);
+    color: var(--on-accent-1);
+
+    transition: 0.4s;
+}
+
+.intro div a:hover {
+    background-color: var(--bg_1);
+    color: var(--bg_3);
+}
+
+
+@media (max-width: 1279px) and (min-width: 800px) {
+    .intro div .one {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 799px) {
+    .intro div .one {
+        font-size: 32px;
+    }
+}
