@@ -111,9 +111,6 @@ nav .right .two::after {
 @media (max-width: 799px) {
     nav {
         padding: 16px;
-        position: fixed;
-        background-color: var(--bg_4);
-        border-bottom: 1px solid #373737;
     }
 
     nav .right{
@@ -236,7 +233,6 @@ main {
 @media (max-width: 799px) {
    .hero {
         padding: 40px 16px;
-        margin-top: 40px;
     }
 
     .hero h1 {
