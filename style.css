@@ -34,13 +34,13 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
+    background-color: #373737;
 }
 
 .page {
     width: 100%;
     max-width: 1280px;
 }
-
 
 /* ===============================HEADER============================================== */
 nav {
@@ -72,7 +72,7 @@ nav .right .one {
     font-size: 12px;
     font-weight: 500;
     line-height: 110%;
-    letter-spacing: -4.5%;
+    letter-spacing: -0.045em;
 
     color: var(--paragraph);
 }
@@ -81,7 +81,7 @@ nav .right .two {
     font-size: 12px;
     font-weight: 500;
     line-height: 110%;
-    letter-spacing: -4.5%;
+    letter-spacing: -0.045em;
 
     padding: 12px;
     border-radius: 51.57px;
@@ -111,6 +111,9 @@ nav .right .two::after {
 @media (max-width: 799px) {
     nav {
         padding: 16px;
+        position: fixed;
+        background-color: var(--bg_4);
+        border-bottom: 1px solid #373737;
     }
 
     nav .right{
@@ -120,6 +123,11 @@ nav .right .two::after {
     nav .right .two::after {
         content: "Book";
     }
+}
+/* ==============================MAIN================================================= */
+main {
+    display: flex;
+    flex-direction: column;
 }
 /* ===============================HERO============================================== */
 
@@ -160,7 +168,7 @@ nav .right .two::after {
     font-size: 80px;
     font-weight: 400;
     line-height: 100%;
-    letter-spacing: -8%;
+    letter-spacing: -0.08em;
 
     color: var(--paragraph);
 }
@@ -169,7 +177,7 @@ nav .right .two::after {
     font-size: 16px;
     font-weight: 400;
     line-height: 110%;
-    letter-spacing: -4.5%;
+    letter-spacing: -0.045em;
 
     color: var(--paragraph);
 }
@@ -178,7 +186,7 @@ nav .right .two::after {
     font-size: 12px;
     font-weight: 500;
     line-height: 110%;
-    letter-spacing: -4.5%;
+    letter-spacing: -0.045em;
 
     padding: 12px;
     border-radius: 51.57px;
@@ -201,12 +209,15 @@ nav .right .two::after {
 
 .hero .img img{
     width: 429px;
-    height: 411.49px;
+    height: auto;
 }
 
 @media (max-width: 1279px) and (min-width: 800px) {
     .hero {
         padding: 100px 24px;
+        position: sticky;
+        top: 0;
+        z-index: -100;
     }
 
     .hero h1 {
@@ -219,13 +230,13 @@ nav .right .two::after {
 
     .hero .img img{
         width: 273px;
-        height: 262px;
     }
 }
 
 @media (max-width: 799px) {
    .hero {
         padding: 40px 16px;
+        margin-top: 40px;
     }
 
     .hero h1 {
@@ -253,11 +264,9 @@ nav .right .two::after {
 
     .hero .img img{
         width: 343px;
-        height: 329px;
     }
 }
-/* ================================================================================= */
-
+/* ==================================SERVICES======================================== */
 .intro {
     display: flex;
     align-items: center;
@@ -285,28 +294,28 @@ nav .right .two::after {
     font-size: 15px;
     font-weight: 500;
     line-height: 100%;
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;
 }
 
 .intro div .one {
     font-size: 60px;
     font-weight: 400;
     line-height: 105%;
-    letter-spacing: -7%;
+    letter-spacing: -0.07em;
 }
 
 .intro div .two {
     font-size: 16px;
     font-weight: 400;
     line-height: 110%;
-    letter-spacing: -4.5%;
+    letter-spacing: -0.045em;
 }
 
 .intro div a {
     font-size: 12px;
     font-weight: 500;
     line-height: 110%;
-    letter-spacing: -4.5%;
+    letter-spacing: -0.045em;
 
     padding: 12px;
     border-radius: 51.57px;
@@ -326,10 +335,411 @@ nav .right .two::after {
     .intro div .one {
         font-size: 48px;
     }
+
+    .intro {
+        padding: 120px 24px 100px 24px;
+    }
 }
 
 @media (max-width: 799px) {
     .intro div .one {
         font-size: 32px;
     }
+
+    .intro {
+        padding: 120px 16px 100px 16px;
+    }
+}
+/* ==============================SECTION-ONE=========================================== */
+.section-one {
+    display: flex;
+    justify-content: flex-start;
+
+    width: 100%;
+
+    font-family: "Work Sans", sans-serif;
+    padding: 20px 0 20px 20px;
+
+    background-color: var(--bg_4);
+    color: var(--paragraph);
+} 
+
+.section-one .card {
+    display: flex;
+    gap: 70px;
+    width: 1036px;
+
+    padding: 80px 100px 80px 80px;
+    border-radius: 20px;
+
+    background-color: var(--accent-1);
+} 
+
+.section-one img {
+    width: auto;
+    height: 285.21px;
+} 
+
+.section-one .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 70px;
+} 
+
+.section-one .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+} 
+
+.section-one h3 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 105%;
+    letter-spacing: -0.045em;
+} 
+
+.section-one .top p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+} 
+
+.section-one .bottom {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+} 
+
+.section-one .bottom p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--bg_4);
+} 
+
+
+@media (max-width: 1279px) and (min-width: 800px) {
+    .section-one {
+        padding: 20px 24px 20px 24px;
+    } 
+
+    .section-one .card {
+        gap: 60px;
+        padding: 54px 60px;
+    } 
+
+    .section-one .right {
+        gap: 54px;
+    } 
+
+    .section-one .top {
+        gap: 24px;
+    } 
+
+    .section-one h3{
+        font-size: 34px;
+    } 
+
+    .section-one img {
+        width: auto;
+        height: 214.82px;
+    } 
+}
+
+@media (max-width: 799px) {
+    .section-one {
+        padding: 0 16px 16px 16px;
+    } 
+
+    .section-one .card {
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+        padding: 40px 16px;
+    } 
+
+    .section-one .top {
+        gap: 24px;
+    } 
+
+   .section-one h3{
+        font-size: 28px;
+    } 
+
+    .section-one img {
+        width: auto;
+        height: 225.7px;
+    } 
+}
+/* ==============================SECTION-TWO=========================================== */
+.section-two {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+
+    font-family: "Work Sans", sans-serif;
+    padding: 20px 20px 20px 0;
+
+    background-color: var(--bg_4);
+    color: var(--paragraph);
+} 
+
+.section-two .card {
+    display: flex;
+    gap: 70px;
+    width: 1036px;
+
+    padding: 80px 100px 80px 80px;
+    border-radius: 20px;
+
+    background-color: var(--accent-1);
+} 
+
+.section-two img {
+    width: auto;
+    height: 267.48px;
+    display: inline-block;
+} 
+
+.section-two .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 70px;
+} 
+
+.section-two .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+} 
+
+.section-two h3 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 105%;
+    letter-spacing: -0.045em;
+} 
+
+.section-two .top p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+} 
+
+.section-two .bottom {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+} 
+
+.section-two .bottom p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--bg_4);
+} 
+
+
+@media (max-width: 1279px) and (min-width: 800px) {
+
+    .section-two {
+        padding: 20px 24px 20px 24px;
+    } 
+
+    .section-two .card {
+        gap: 60px;
+        padding: 54px 60px;
+    } 
+
+   .section-two .left {
+        gap: 54px;
+    } 
+
+    .section-two .top {
+        gap: 24px;
+    } 
+
+    .section-two h3{
+        font-size: 34px;
+    } 
+
+    .section-two img {
+        width: auto;
+        height: 179px;
+    } 
+}
+
+@media (max-width: 799px) {
+    .section-two {
+        padding: 0 16px 16px 16px;
+    } 
+
+    .section-two .card {
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+        padding: 40px 16px;
+    } 
+
+    .section-two .top {
+        gap: 24px;
+    } 
+
+   .section-two h3{
+        font-size: 28px;
+    } 
+
+    .section-two img {
+        width: auto;
+        height: 179px;
+        order: -1;
+    } 
+} 
+/* ==============================SECTION-THREE=========================================== */
+.section-three {
+    display: flex;
+    justify-content: flex-start;
+
+    width: 100%;
+
+    font-family: "Work Sans", sans-serif;
+    padding: 20px 0 20px 20px;
+
+    background-color: var(--bg_4);
+    color: var(--paragraph);
+} 
+
+.section-three .card {
+    display: flex;
+    gap: 70px;
+    width: 1036px;
+
+    padding: 80px 100px 80px 80px;
+    border-radius: 20px;
+
+    background-color: var(--accent-1);
+} 
+
+.section-three img {
+    width: auto;
+    height: 285.21px;
+} 
+
+.section-three .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 70px;
+} 
+
+.section-three .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+} 
+
+.section-three h3 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 105%;
+    letter-spacing: -0.045em;
+} 
+
+.section-three .top p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+} 
+
+.section-three .bottom {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+} 
+
+.section-three .bottom p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--bg_4);
+} 
+
+
+@media (max-width: 1279px) and (min-width: 800px) {
+    .section-three {
+        padding: 20px 24px 20px 24px;
+    } 
+
+    .section-three .card {
+        gap: 60px;
+        padding: 54px 60px;
+    } 
+
+    .section-three .right {
+        gap: 54px;
+    } 
+
+    .section-three .top {
+        gap: 24px;
+    } 
+
+    .section-three h3{
+        font-size: 34px;
+    } 
+
+    .section-three img {
+        width: auto;
+        height: 214.82px;
+    } 
+}
+
+@media (max-width: 799px) {
+    .section-three {
+        padding: 0 16px 16px 16px;
+    } 
+
+    .section-three .card {
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+        padding: 40px 16px;
+    } 
+
+    .section-three .top {
+        gap: 24px;
+    } 
+
+   .section-three h3{
+        font-size: 28px;
+    } 
+
+    .section-three img {
+        width: auto;
+        height: 225.7px;
+    } 
 }
