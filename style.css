@@ -1043,9 +1043,6 @@ main {
     height: 330px;
 }
 
-
-
-
 .benefits-section .card {
     display: flex;
     flex-direction: column;
@@ -1083,8 +1080,6 @@ main {
     line-height: 110%;
     letter-spacing: -0.045em;
 }
-
-
 
 @media (max-width: 1279px) and (min-width: 800px) {
     .benefits-div {
@@ -1164,3 +1159,123 @@ main {
         font-size: 22px;
     }
 }
+/* ====================================CTA-SECTION=========================================== */
+/* .CTA {
+    display: flex;
+    gap: 20px;
+
+    height: 472px;
+    padding: 50px 40px 50px 40px;
+
+    font-family: "Work Sans", sans-serif;
+    padding: 80px 40px 120px 40px;
+
+    background-color: var(--bg_4);
+    color: var(--on-accent-1);
+}
+
+.CTA picture {
+    border-radius: 20px;
+    flex: 1;
+}
+
+.CTA .content-div {
+    display: flex;
+    flex-direction: column;
+    gap: 28.04px;
+    flex: 1;
+
+    height: 375px;
+    padding: 60px;
+    border-radius: 20px;
+    background-color: var(--bg_3);
+}
+
+@media (max-width: 1279px) and (min-width: 800px) {
+    .CTA {
+        height: 517px;
+    }
+
+    .CTA img {
+        height: 417px;
+        width: 350px;
+    }
+
+    .CTA .content-div {
+        height: 417px;
+    }
+}
+
+@media (max-width: 799px) {
+    .CTA {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .CTA img {
+        height: 232px;
+        order: -1;
+    }
+} */
+/* ====================================EXPERTS-SECTION=========================================== */
+.experts {
+    display: flex;
+    gap: 20px;
+
+    padding: 160px 120px;
+
+    font-family: "Work Sans", sans-serif;
+
+    background-color: var(--bg_2);
+    color: var(--paragraph);
+}
+
+.experts div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   gap: 60px;
+   text-align: center;
+}
+
+.experts p {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 105%;
+    letter-spacing: -0.07em;
+}
+
+.experts a {
+    padding: 24px 30px;
+    background-color: var(--bg_3);
+    border-radius: 88px;
+
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: var(--on-accent-1);
+}
+
+
+@media (max-width: 1279px) and (min-width: 800px) {
+    .experts {
+        padding: 160px 80px;
+    }
+
+    .experts p {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 799px) {
+    .experts {
+        padding: 160px 24px;
+    }
+
+    .experts p {
+        font-size: 32px;
+    }
+} 
+/* ====================================FOOTER=========================================== */
