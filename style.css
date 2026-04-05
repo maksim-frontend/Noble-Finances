@@ -34,7 +34,6 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #373737;
 }
 
 .page {
@@ -139,6 +138,8 @@ main {
 
     background-color: var(--bg_1);
     color: var(--paragraph);
+
+    border-radius: 0 0 16px 16px;
 }
 
 .hero-div {
@@ -738,4 +739,224 @@ main {
         width: auto;
         height: 225.7px;
     } 
+}
+/* ==============================SECTION-TESTIMOTIAL=========================================== */
+.testimonial {
+    display: flex;
+    width: 100%;
+
+    font-family: "Work Sans", sans-serif;
+    padding: 100px;
+
+    background-color: var(--bg_4);
+    color: var(--paragraph);
+}
+
+.testimonial-div {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    width: 100%;
+}
+
+.testimonial .top {
+    width: 100%;
+    text-align: center;
+}
+
+.testimonial .top h2 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 105%;
+    letter-spacing: -0.07em;
+}
+
+.testimonial .bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.testimonial .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial .left h3 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 105%;
+    letter-spacing: -0.045em;
+}
+
+.testimonial .left p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+}
+
+.testimonial section {
+    width: 310px;
+    height: 128px;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 8px;
+    padding: 20px 30px;
+}
+
+.testimonial .card-job {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    width: 100%;
+
+    padding-block: 20px;
+    border-top: 1px solid var(--paragraph);
+} 
+
+.testimonial .right {
+    padding: 0 30px 0 40px;
+    display: flex;
+    gap: 50px;
+} 
+
+.feeback {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+}
+
+.testimonial .review.active {
+    display: flex;
+    gap: 50px;
+} 
+
+.testimonial .review.active .info {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+} 
+
+.testimonial .review.active img {
+    width: 46.05px;
+    height: 48.04px;
+    border-radius: 16px;
+} 
+
+.testimonial .info p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+} 
+
+.order-for-testimonial {
+    display: flex;
+    flex-direction: column;
+}
+
+.review {
+    display: none;
+}
+
+.review.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.job {
+    cursor: pointer;
+}
+
+.job.active {
+    background-color: var(--bg_3);
+}
+
+.job.active h3 {
+    color: var(--on-accent-1);
+}
+
+.job.active p {
+    color: var(--on-accent-4);
+}
+
+@media (max-width: 1279px) and (min-width: 800px) {
+    .testimonial {
+        order: -1;
+    }
+
+    .testimonial .top h2 {
+        font-size: 48px;
+    }
+
+    .testimonial .bottom {
+        gap: 28px;
+    }
+
+    .feeback {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 799px) {
+    .testimonial {
+        padding: 36px;
+        background-color: var(--bg_2);
+        order: -1;
+    }
+
+    .testimonial-div {
+        flex-direction: column;
+        gap: 40px;
+        padding: 24px 16px;
+        background-color: var(--bg_4);
+    }
+
+    .testimonial .top h2 {
+        font-size: 32px;
+    }
+
+    .testimonial .bottom {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .testimonial .left {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .testimonial section {
+        width: auto;
+        height: auto;
+        flex: 1;
+        padding: 16px 12px;
+    }
+
+    .testimonial .left h3 {
+        font-size: 12px;
+    }
+
+    .feeback {
+        font-size: 18px;
+    }
+
+    .testimonial .right {
+        padding: 0;
+        padding-top: 40px;
+    } 
+
+    .testimonial .card-job {
+        padding-top: 8px;
+        padding-bottom: 0;
+    } 
+
 }
